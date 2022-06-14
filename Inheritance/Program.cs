@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Inheritance
+﻿namespace Inheritance
 {
     class Program
     {
@@ -28,12 +26,26 @@ namespace Inheritance
              *  
              * Creatively display the class member values 
              */
+            var birds = new Bird();
+            birds.birdHaveBeaks = true;
+            birds.Legss = 2;
+            birds.HaveTeeth = false;
+            birds.birdsHaveFeathers = true;
+
+
 
             /*Create an object of your Reptile class
              *  give values to your members using the object of your Reptile class
              *  
              * Creatively display the class member values 
              */
+            var reptile = new Reptile()
+            {
+                Legs = 4,
+                coldBlooded = true,
+                Scales = true,
+                areVertebrates = true,
+            };
         }
     }
 }
